@@ -11,7 +11,7 @@ const Register: FunctionComponent<{ link: string }> = ({ link }) => {
         justifyContent: 'center',
         alignItems: 'center',
         height: '100%',
-        my: [1, 1, 0],
+        my: [3, 3, 0],
       }}
     >
       <Link href={link} target="_blank">
