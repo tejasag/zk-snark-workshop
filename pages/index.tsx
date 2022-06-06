@@ -26,7 +26,7 @@ const Home: NextPage = () => {
              Agent 3.14, you are one of the best detectives this country has ever had. You have to find a way to verify who has the correct number because they want the money before they give you the number.
            </span>
 
-           <div sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", mb: [1, 1, 0] }}>
+           <div sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", my: [1, 1, 0] }}>
                <a href="" target="_blank">
                <span sx={{  
                     textShadow: "none",
