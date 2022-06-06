@@ -3,7 +3,7 @@
 import Head from 'next/head';
 import { FunctionComponent } from 'react';
 
-const HeadComp: FunctionComponent<{
+const Meta: FunctionComponent<{
   title: string;
   description: string;
 }> = ({ title, description }) => {
@@ -16,4 +16,4 @@ const HeadComp: FunctionComponent<{
   );
 };
 
-export default HeadComp;
+export default Meta;
