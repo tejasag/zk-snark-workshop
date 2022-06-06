@@ -1,14 +1,14 @@
 /** @format */
 
 import { FunctionComponent } from 'react';
-import { Heading, Text } from 'theme-ui';
+import { Box, Heading, Text } from 'theme-ui';
 
 const HeadingComp: FunctionComponent<{
   heading: string;
   subHeading: string;
 }> = ({ heading, subHeading }) => {
   return (
-    <>
+    <Box>
       <Heading
         sx={{
           color: 'text',
@@ -23,7 +23,7 @@ const HeadingComp: FunctionComponent<{
       >
         {subHeading}
       </Text>
-    </>
+    </Box>
   );
 };
 
