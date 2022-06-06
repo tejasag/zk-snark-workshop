@@ -1,8 +1,11 @@
+/** @jsxImportSource theme-ui */
 import '../styles/globals.css'
+import { theme } from "../lib/theme";
+import { ThemeProvider } from "theme-ui";
 import type { AppProps } from 'next/app'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
-
-export default MyApp
+export default ({ Component, pageProps }: AppProps)  => (
+    <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+    </ThemeProvider>
+)
