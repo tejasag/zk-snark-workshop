@@ -68,7 +68,8 @@ const Story: FunctionComponent<{}> = () => {
         </Box>
         <br />
         You have recently discovered that a friend of your knows a technology
-        called zk-SNARK which can help solve this! Let’s go?
+        called <Text sx={{ variant: 'text.underline' }}>zk-SNARK</Text> which
+        can help solve this! Let’s go?
       </Text>
     </Box>
   );

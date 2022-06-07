@@ -36,16 +36,7 @@ const SubHeading: FunctionComponent<{ subHeading: string }> = ({
         mt: 2,
       }}
     >
-      <Text
-        sx={{
-          textDecoration: 'underline',
-          textDecorationStyle: 'wavy',
-          textDecorationColor: 'yellow',
-          textUnderlineOffset: [5],
-        }}
-      >
-        {subHeadingArr[0]},
-      </Text>
+      <Text sx={{ variant: 'text.underline' }}>{subHeadingArr[0]},</Text>
       {subHeadingArr[1]}
     </Text>
   );
