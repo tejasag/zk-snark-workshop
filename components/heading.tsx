@@ -18,12 +18,36 @@ const HeadingComp: FunctionComponent<{
       >
         {heading}
       </Heading>
-      <Text
-        sx={{ color: 'text', fontSize: ['1rem', '1.2rem', '1.2rem'], mt: 2 }}
-      >
-        {subHeading}
-      </Text>
+      <SubHeading subHeading={subHeading} />
     </Box>
+  );
+};
+
+const SubHeading: FunctionComponent<{ subHeading: string }> = ({
+  subHeading,
+}) => {
+  const subHeadingArr = subHeading.split(',');
+
+  return (
+    <Text
+      sx={{
+        color: 'text',
+        fontSize: ['1rem', '1.2rem', '1.2rem'],
+        mt: 2,
+      }}
+    >
+      <Text
+        sx={{
+          textDecoration: 'underline',
+          textDecorationStyle: 'wavy',
+          textDecorationColor: 'yellow',
+          textUnderlineOffset: [5],
+        }}
+      >
+        {subHeadingArr[0]},
+      </Text>
+      {subHeadingArr[1]}
+    </Text>
   );
 };
 
