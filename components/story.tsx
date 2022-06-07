@@ -16,22 +16,59 @@ const Story: FunctionComponent<{}> = () => {
           fontSize: ['1rem', '1.5rem', '1.5rem'],
         }}
       >
-        In a world of chaos and war, scientists have discovered a hidden cave
-        which has its entrace closed with boulders heavier than we have ever
-        seen. Archeologists have found rocks outside the cave with carvings in
-        pre-historic glyphs claiming the cave contains a hidden "Elixir" which
-        has answers to everything humans can ever ask. Discoveries prove that
-        the only way to open the cave is by a number. The good news here is,
-        they have also discovered an encrypted irreversible hash of the number,
-        but the bad news is that we only have 1 shot at entering the number
-        before the cave closes forever. The government has put a bounty of 30
-        million dollars to whoever finds the number first and a lot of people
-        are now apparently claiming that they know the number.
+        It is year 2150, the world is at a crazy level of automation, no one
+        needs to work anymore, there is unlimited food, entertainment and all
+        mechanical and boring human tasks have been automated. All a human is
+        supposed to do is to sit back and enjoy these comforts.
         <br />
         <br />
-        Agent 3.14, you are one of the best detectives this country has ever
-        had. You have to find a way to verify who has the correct number because
-        they want the money before they give you the number.
+        But, humans are still depressed, the eternal question of human existence
+        still persists! Why are we here? and what are we supposed to do? Given
+        this newly available free time more and more humans are getting
+        depressed and someone has to solve this.
+        <br />
+        <br />
+        There is a mystic who has appeared from no-where and claims to know a
+        place where lies the answer to all these question. Here is what the
+        mystic claims:
+        <ul>
+          <li>
+            There is a cave at the end of the world, in that cave lies an elixir
+            which has answers to all questions of human existence.
+          </li>
+          <li>
+            The cave is protected by gate which has a number lock on it, you can
+            only take one attempt at it.
+          </li>
+
+          <li>He provides you with the hash of the number key for the lock.</li>
+        </ul>
+        Hearing this a crowd has emerged claiming that they know the key to open
+        that door. All of them are quoting different prices for providing the
+        key. No one of them wants to show the key as they are afraid that you
+        might simply use the key and won’t give them the money.
+        <br />
+        <br />
+        You are the smartest scientist and technologist on planet earth, the
+        entire human kind if now looking to you for a solution to this problem.
+        <br />
+        <br />
+        <Box
+          sx={{
+            border: '1px solid white',
+            p: [3],
+            borderRadius: [5],
+            textAlign: 'center',
+          }}
+        >
+          <b>
+            “You have to find whether a given person has the right key or not
+            without actually seeing their key.”
+          </b>
+        </Box>
+        <br />
+        You have recently discovered that a friend of your knows a technology
+        called zk-SNARK which can help solve this! Let’s go?
       </Text>
     </Box>
   );

@@ -8,5 +8,13 @@ export const theme: Theme = {
     colors: {
         text: "#42FF6B",
         background: "#000000",
+    },
+    text: {
+        underline: {
+            textDecoration: 'underline',
+            textDecorationStyle: 'wavy',
+            textDecorationColor: 'yellow',
+            textUnderlineOffset: [5],
+        }
     }
 }
