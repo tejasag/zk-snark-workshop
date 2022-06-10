@@ -3,12 +3,12 @@
  * @jsxImportSource theme-ui
  */
 
-import type { NextPage } from "next";
+import type { NextPage, GetServerSideProps } from "next";
 import { Box, Link, Text, Flex } from "theme-ui";
 import { Meta, Layout, Heading, Story, Register, Heart } from "../components";
 import { supabase } from "../lib/utils/supabaseClient";
 
-const Home: NextPage = ({ hearts, supabase }) => {
+const Home: NextPage<{ hearts: number }> = ({ hearts }) => {
     return (
         <>
             <Meta
@@ -30,7 +30,7 @@ const Home: NextPage = ({ hearts, supabase }) => {
                         width: "100%",
                     }}
                 >
-                    <Heart hearts={hearts} supabase={supabase} />
+                    <Heart hearts={hearts} />
                     <Register link="" />
                     {/* hack :p */}
                     <div></div>
