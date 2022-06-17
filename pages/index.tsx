@@ -5,7 +5,7 @@
 
 import type { NextPage } from 'next';
 import { Box, Link, Text } from 'theme-ui';
-import { Meta, Layout, Heading, Story, Register } from '../components';
+import { Meta, Layout, Heading, Story, Register, Story2 } from '../components';
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +20,10 @@ const Home: NextPage = () => {
           subHeading="Learn ZK-SNARK in 60 minutes, for complete beginners."
         />
 
-        <Story />
+        {
+          // <Story />
+        }
+        <Story2 />
         <Register link="" />
       </Layout>
     </>
