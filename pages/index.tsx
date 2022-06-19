@@ -4,7 +4,8 @@
  */
 import type { NextPage, GetServerSideProps } from 'next';
 import { Box, Link, Text, Flex } from 'theme-ui';
-import { Meta, Layout, Heading, Story, Register, Heart } from '../components';
+import { Meta, Layout, Heading, Story2, Register, Heart } from '../components';
+import { registerLink } from '../lib/data';
 import { supabase } from '../lib/utils/supabaseClient';
 
 const Home: NextPage<{ hearts: number }> = ({ hearts }) => {
@@ -20,7 +21,7 @@ const Home: NextPage<{ hearts: number }> = ({ hearts }) => {
           subHeading="Learn ZK-SNARK in 60 minutes, for complete beginners."
         />
 
-        <Story />
+        <Story2 />
         <Flex
           sx={{
             flexDirection: 'row',
@@ -30,7 +31,7 @@ const Home: NextPage<{ hearts: number }> = ({ hearts }) => {
           }}
         >
           <Heart hearts={hearts} />
-          <Register link="" />
+          <Register link={registerLink} />
           {/* hack :p */}
           <div></div>
         </Flex>
