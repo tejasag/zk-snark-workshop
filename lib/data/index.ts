@@ -3,5 +3,6 @@ export const registerLink = 'https://calendar.google.com/calendar/render?action=
 export const meta = {
 	title: "ZK-Elixir",
 	description: "Learn ZK-SNARK in 60 minutes, for complete beginners.",
-	imgLink: "https://cloud-p84fck8ij-hack-club-bot.vercel.app/0image.png"
+	imgLink: "https://cloud-p84fck8ij-hack-club-bot.vercel.app/0image.png",
+    keywords: "",
 }
