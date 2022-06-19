@@ -5,16 +5,13 @@
 import type { NextPage, GetServerSideProps } from 'next';
 import { Box, Link, Text, Flex } from 'theme-ui';
 import { Meta, Layout, Heading, Story2, Register, Heart } from '../components';
-import { registerLink } from '../lib/data';
+import { meta, registerLink } from '../lib/data';
 import { supabase } from '../lib/utils/supabaseClient';
 
 const Home: NextPage<{ hearts: number }> = ({ hearts }) => {
   return (
     <>
-      <Meta
-        title="ZK-Elixir"
-        description="Learn ZK-SNARK in 60 minutes, for complete beginners."
-      />
+      <Meta {...meta} />
       <Layout>
         <Heading
           heading="ZK-Elixir"

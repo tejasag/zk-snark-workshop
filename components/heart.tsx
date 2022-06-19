@@ -4,6 +4,7 @@ import { FunctionComponent, useEffect, useState } from 'react';
 import { Box, Flex, Text } from 'theme-ui';
 import { GetServerSideProps } from 'next';
 import { supabase } from '../lib/utils/supabaseClient';
+import { darken } from '@theme-ui/color';
 
 const Heart: FunctionComponent<{
   hearts: number;
@@ -30,7 +31,15 @@ const Heart: FunctionComponent<{
           justifyContent: 'center',
         }}
       >
-        <Box sx={{ cursor: 'pointer' }} onClick={handleClick}>
+        <Box
+          sx={{
+            cursor: 'pointer',
+            svg: {
+              ':hover': { stroke: darken('#42FF6B', 0.2) },
+            },
+          }}
+          onClick={handleClick}
+        >
           <svg
             width={32}
             height={32}
